@@ -20,6 +20,9 @@ export class AppComponent implements OnInit {
 
   constructor(private http: HttpClient){}
 
+  // setTimeout() method actually calls the function after that amount of time.
+  // So setTimeout(myFunction, 2000); means, call myFunction after 2000 time.
+
   callStopLoader(): void {
     setTimeout(() => {
       this.showLoader = false;
